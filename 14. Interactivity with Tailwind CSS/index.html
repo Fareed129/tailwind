@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Intractivity with tailwind css</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <button class="bg-blue-500 p-5 m-3 rounded-md text-white block">Register</button>
+
+    <!-- hover -->
+    <button class="bg-blue-500 p-5 m-3 rounded-md text-white  hover:bg-blue-700 hover:text-yellow-200 block">Register</button>
+
+    <!-- Focus: when element clicked-->
+    <button class="bg-blue-500 p-5 m-3 rounded-md text-white focus:bg-yellow-300 focus:text-black block">Register</button>
+
+    <!-- Active: the moment when clicked -->
+    <button class="bg-blue-500 p-5 m-3 rounded-md text-white active:bg-green-400 block">Register</button>
+
+    <!-- hover, focus, active all together -->
+    <button class="m-3 p-5 bg-blue-500 rounded-md text-white
+    hover:bg-blue-700
+    focus:bg-yellow-300 focus:text-black
+    active:bg-green-400
+    ">Register</button>
+
+    <!-- Grouping Hover: so that two or more element hover together according to parent element -->
+    <div>
+        <a href="#" class="group">
+            <h1 
+            class="font-bold text-3xl group-hover:text-red-500">
+            Lorem, ipsum dolor.</h1>
+            <p 
+            class="group-hover:text-green-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, autem?</p>
+        </a>
+    </div>
+
+
+
+</body>
+
+</html>
